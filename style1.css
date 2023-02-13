@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.a {
+  position: absolute;
+  width: 321px;
+  height: 31px;
+  left: 120px;
+  top: 35px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #16325f;
+}
+.b {
+  position: absolute;
+  width: 232px;
+  height: 19px;
+  left: 120px;
+  top: 70px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #a9a9a9;
+}
+.c {
+  position: absolute;
+  width: 151px;
+  height: 63px;
+  left: 1000px;
+  top: 35px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 63px;
+  /* identical to box height, or 242% */
+
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+
+  color: #2d2d2d;
+}
+.d {
+  position: absolute;
+  width: 155px;
+  height: 63px;
+  left: 1234px;
+  top: 35px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 63px;
+  /* identical to box height, or 242% */
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #2d2d2d;
+}
+.e-1 {
+  position: absolute;
+  width: 597px;
+  height: 43px;
+  left: 500px;
+  top: 480px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 43px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: white;
+}
+.e-2 {
+  position: absolute;
+  width: 597px;
+  height: 43px;
+  left: 860px;
+  top: 480px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 43px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #ff8e43;
+}
+.f {
+  position: absolute;
+  width: 371px;
+  height: 29px;
+  left: 640px;
+  top: 550px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+
+  /* identical to box height */
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #acacac;
+}
+
+.slider {
+  width: 1600px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+.slide {
+  width: 25%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 1600px;
+  height: 500px;
+}
+.image2{
+  margin-left:64px;
+}
+.navigaiton-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: 10px;
+  margin-left: 50px;
+
+  display: flex;
+  justify-content: right;
+}
+.manual-btn {
+  border: 3px solid red;
+  padding: 3px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+.manual-btn:hover {
+  background: blueviolet;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+.naviagtion-auto {
+  position: absolute;
+  display: flex;
+  width: 1600px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.naviagtion-auto div {
+  border: 3px solid red;
+  padding: 5px;
+  border-radius: 9px;
+  transition: 1s;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: pink;
+}
+#radio1:checked ~ .navigation-auto .auto-btn2 {
+  background: pink;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn3 {
+  background: pink;
+}
